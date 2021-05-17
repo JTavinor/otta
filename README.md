@@ -25,7 +25,7 @@ The reaction data consists of four columns:
 
 **Task**: The similarity score between two users is the number of jobs which they both like. Find the two users with the highest similarity.
 
-**Answer**: _[Enter the two user IDs & their similarity score here]_
+**Answer**: User 1 ID: 5193. User 2 ID: 1791. Similarity Score: 354.
 
 ### Task 2
 
@@ -33,7 +33,7 @@ In the `data` folder there is an additional CSV file called `jobs.csv`. It conta
 
 **Task**: The similarity score between two companies is the number of users who like at least one job at both companies. Using both the `reactions.csv` and `jobs.csv` data, find the two companies with the highest similarity score.
 
-**Answer**: _[Enter the two company IDs & their similarity score here]_
+**Answer**: Company 1 ID: 46. Company 2 ID: 92. Similarity Score: 104.
 
 ### Task 3
 
@@ -47,11 +47,16 @@ We don't think it's fair to ask you to build something with a UI, as we know thi
 - If the best example of your work is something you've done at a company, it's okay to link to a live deployed version
 - If you can't link to anything, a screenshot is also fine
 
-**Answer**: _[Add a link to repo/website/screenshot here]_
+**Answer**: Website: https://jt-dengie-takeaways.herokuapp.com/
+
+Github: https://github.com/JTavinor/DengieTakeawayApp
 
 **Task**: Tell us about the biggest challenge you faced in building the above.
 
-**Answer**: _[Write your answer here (300 words max)]_
+**Answer**: This is a takeaway app I am building for my local area using React and Node. The biggest challenge I faced in the front end was state management - Initially the app involved passing a lot of data between components which quickly became very confusing and unmaintainable. To rectify this problem I decided to learn Redux in order to have a central store for my data. Initially I struggled to compose the store and didn't really understand how action creators and reducers worked. However using the redux toolkit library in conjunction with react-redux greatly streamlined this process and made the whole thing more intuitive. I also implemented redux middleware to handle all API requests, abstracting the logic away from my UI components which was a great bonus. In addition, my middleware made it easy to track when an API call was in progress, allowing me to add loading icons when waiting for data. Another great benefit was easily being able to add persistence to the app, so if a user navigated away from the app and returned their basket would still be intact.
+
+From this I have learnt that putting in the hard work up front to learn a specific tool means a lot easier time down the road. As described above, learning this one library has had a myriad of benefits beyond the state management I initially turned to it for. Subscribing and passing data to the store in each component so it only has to deal with the data that’s relevant to it means I have full confidence the data is doing exactly what it needs to. The code becomes much more scalable and maintainable as a result, meaning a redux store is likely to be one of the first parts I build in future apps. 
+
 
 ## Submission
 
